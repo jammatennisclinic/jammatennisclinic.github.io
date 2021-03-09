@@ -2212,6 +2212,12 @@ input, select, textarea {
 			padding: 0.5em 0;
 		}
 
+	.logo {
+		position: relative; 
+		top: -50px;
+		height: 200px;
+		width: 200px;
+	}
 /* Wrapper */
 
 	.wrapper {
@@ -2694,7 +2700,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.special {
-				padding-top: 5.5em;
+				padding-top: 0;
 				margin-bottom: 4em;
 			}
 
