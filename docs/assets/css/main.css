@@ -1884,6 +1884,15 @@ input, select, textarea {
 				margin: auto;
 				object-fit: cover;
 			}
+
+			.image.galleryfeatured img {
+				display: block;
+				width: 100%;
+				width:  370px;
+				height: 350px;
+				margin: 0 0 2em 5em;
+				object-fit: cover;
+			}
 		.image.francois img {
 			display: block;
 			width: 300px;
