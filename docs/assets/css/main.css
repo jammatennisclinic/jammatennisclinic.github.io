@@ -180,6 +180,12 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
+	.classlist {
+		margin-left: auto;
+		margin-right: auto;
+		width: 15em;
+	}
+
 /* Container */
 
 	.container {
@@ -1731,8 +1737,8 @@ input, select, textarea {
 	}
 
 	header.special {
-		margin-bottom: 5em;
-		padding-top: 7em;
+		margin-bottom: 3em;
+		padding-top: 0em;
 		position: relative;
 		text-align: center;
 	}
@@ -2243,7 +2249,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #4b819b;
+			background-color: #29424e;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -3237,6 +3243,9 @@ input, select, textarea {
 			input[type="reset"],
 			button,
 			.button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				max-width: 20em;
 				width: 100%;
 			}
