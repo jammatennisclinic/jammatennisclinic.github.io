@@ -7,7 +7,6 @@ window.addEventListener('scroll', () => {
     const firstNumber = document.getElementById('firstNumber');
 
     if (firstNumber.getBoundingClientRect().top >= 200 && firstNumber.getBoundingClientRect().bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-        console.log(firstNumber.getBoundingClientRect().top);
         startCount();
     }
 
