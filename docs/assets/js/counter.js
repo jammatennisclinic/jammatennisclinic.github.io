@@ -1,22 +1,17 @@
-console.log("counter being called");
-
 const counters = document.querySelectorAll('.counter');
-const speed = 50;
+const controller = new AbortController();
+const speed = 200;
 
 window.addEventListener('scroll', () => {
+    console.log("eventListener being fired")
     const firstNumber = document.getElementById('firstNumber');
 
     if (firstNumber.getBoundingClientRect().top >= 200 && firstNumber.getBoundingClientRect().bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        console.log("calling count function now");
         startCount();
+        controller.abort();
     }
-
-    // const scrolled = window.offsetTop;
-    // const elementPosition = counters.offsetTop;
-    
-    // if(scrolled == elementPosition){
-    //     startCount();
-    // }
-})
+}, {signal: controller.signal})
 
 function startCount() {
     counters.forEach(counter => {
@@ -33,7 +28,8 @@ function startCount() {
                 counter.innerText = value;
                 setTimeout(updateCount, 1);
             } else {
-                count.innerText = parseInt(target);
+                const roundedTarget = Math.round(target);
+                counter.innerText = roundedTarget;
             }
         }
         updateCount();
