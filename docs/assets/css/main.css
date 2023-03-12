@@ -1854,7 +1854,24 @@ input, select, textarea {
 		opacity: 0.5;
 	}
 
-/* Image */
+	/* map */
+	#map {
+		height: 60vh;
+	}
+
+	/* reasons for excellence card */
+	.excellence {
+		transform: translateX(0);
+		transition: 300ms;
+		opacity: 0;
+	}
+
+	.excellence.show {
+		transform: translateX(100);
+		opacity: 1;
+	}
+
+	/* Image */
 
 	.image {
 		border: 0;

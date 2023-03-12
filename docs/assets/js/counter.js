@@ -3,7 +3,7 @@ const controller = new AbortController();
 const speed = 200;
 
 window.addEventListener('scroll', () => {
-    console.log("eventListener being fired")
+    // console.log("eventListener being fired")
     const firstNumber = document.getElementById('firstNumber');
 
     if (firstNumber.getBoundingClientRect().top >= 200 && firstNumber.getBoundingClientRect().bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
