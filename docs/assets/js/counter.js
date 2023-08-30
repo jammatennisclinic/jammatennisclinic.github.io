@@ -19,11 +19,11 @@ function startCount() {
             // console.log("inside counters function")
             const target = +counter.getAttribute('data-target');
             const count = +counter.innerText;
-            const inc = target / speed;
+            const inc = Math.max(1, Math.ceil(target / speed));
             // console.log(target);
             // console.log(count);
             // console.log(inc);
-            if(count < target) {
+            if(count + inc < target) {
                 const value = count + inc;
                 counter.innerText = value;
                 setTimeout(updateCount, 1);
