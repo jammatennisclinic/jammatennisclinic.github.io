@@ -2122,6 +2122,10 @@ input, select, textarea {
 		ul.buttons:last-child {
 			margin-bottom: 0;
 		}
+		ul.buttons:summer {
+			width: 50px;
+        		height: 25px;	
+		}
 
 		ul.buttons li {
 			display: inline-block;
