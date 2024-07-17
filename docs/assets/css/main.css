@@ -2123,8 +2123,8 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 		ul.buttons:summer {
-			width: 50px;
-        		height: 25px;	
+			width: 200px;
+        		height: 200px;	
 		}
 
 		ul.buttons li {
