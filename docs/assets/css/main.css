@@ -2122,11 +2122,6 @@ input, select, textarea {
 		ul.buttons:last-child {
 			margin-bottom: 0;
 		}
-		ul.buttons:summer {
-			width: 200px;
-        		height: 200px;	
-		}
-
 		ul.buttons li {
 			display: inline-block;
 			padding: 0 0 0 1.5em;
@@ -2248,6 +2243,16 @@ input, select, textarea {
 		button.small,
 		.button.small {
 			font-size: 0.7em;
+			min-width: 14em;
+			padding: 0.5em 0;
+		}
+
+		input[type="button"].summer,
+		input[type="submit"].summer,
+		input[type="reset"].summer,
+		button.summer,
+		.button.summer {
+			font-size: 2em;
 			min-width: 14em;
 			padding: 0.5em 0;
 		}
